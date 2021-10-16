@@ -7,7 +7,8 @@ public class LinkedListMain {
         Operation operation = new Operation();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter 1 to add the data at the start\n" + "Enter 2 to add the data at the end\n" +
-                            "Enter 3 to add the data at middle\n" + "Enter 4 to delete the first element\n");
+                            "Enter 3 to add the data at middle\n" + "Enter 4 to delete the first element\n" +
+                            "Enter 5 to delete the last element\n");
         switch(scanner.nextInt()) {
             case 1:
                 operation.addDataAtStart();
@@ -20,6 +21,9 @@ public class LinkedListMain {
                 break;
             case 4:
                 operation.deleteFirstNode();
+                break;
+            case 5:
+                operation.deleteLastNode();
                 break;
         }
         scanner.close();
