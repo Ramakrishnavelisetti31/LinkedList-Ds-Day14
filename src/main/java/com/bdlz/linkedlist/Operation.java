@@ -25,4 +25,12 @@ public class Operation {
         linkedList.insertInBetween(firstNode, newNode);
         linkedList.print();
     }
+
+    public void deleteFirstNode() {
+        addDataAtStart();
+        System.out.println("");
+        Node deleteNode = linkedList.pop();
+        linkedList.print();
+
+    }
 }
