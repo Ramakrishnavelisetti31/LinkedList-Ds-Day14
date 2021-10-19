@@ -105,6 +105,26 @@ public class LinkedList {
         previousNode.next = nextNode;
     }
 
+    public void sort() {
+        Node initialStart = head, index = null;
+        if (head == null) {
+            System.out.println("List is empty");
+            return;
+        }
+        while (initialStart != null) {
+            index = initialStart.next;
+            while (index != null) {
+                if (initialStart.data > index.data) {
+                    int temp = initialStart.data;
+                    initialStart.data = index.data;
+                    index.data = temp;
+                }
+                index = index.next;
+            }
+            initialStart = initialStart.next;
+        }
+    }
+
     public void print() {
         if (head == null) {
             System.out.println("Linked List is Empty");

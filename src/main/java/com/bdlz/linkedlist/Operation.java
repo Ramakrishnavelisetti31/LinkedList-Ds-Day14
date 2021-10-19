@@ -61,4 +61,12 @@ public class Operation {
         linkedList.deleteANode(40);
         linkedList.print();
     }
+
+    public void sortList() {
+        System.out.println("before sorting the list");
+        insertDataAtGivenNode();
+        linkedList.sort();
+        System.out.println("after sorting the list");
+        linkedList.print();
+    }
 }
