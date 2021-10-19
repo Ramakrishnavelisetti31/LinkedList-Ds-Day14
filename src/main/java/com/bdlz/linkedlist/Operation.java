@@ -53,4 +53,12 @@ public class Operation {
         System.out.println("Before");
         linkedList.print();
     }
+
+    public void deleteAfterNodeAfterSearchNode() {
+        System.out.println("Before");
+        insertDataAtGivenNode();
+        System.out.println("after");
+        linkedList.deleteANode(40);
+        linkedList.print();
+    }
 }

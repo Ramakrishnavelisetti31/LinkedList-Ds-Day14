@@ -91,6 +91,20 @@ public class LinkedList {
         return tempNode;
     }
 
+    public void deleteANode(int value) {
+        if (this.head == null) {
+            System.out.println("List is Empty");
+            return;
+        }
+        Node tempNode = head;
+        while (tempNode.next.data != value) {
+            tempNode = tempNode.next;
+        }
+        Node previousNode = tempNode;
+        Node nextNode = tempNode.next.next;
+        previousNode.next = nextNode;
+    }
+
     public void print() {
         if (head == null) {
             System.out.println("Linked List is Empty");
